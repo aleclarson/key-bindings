@@ -1,0 +1,12 @@
+{
+  "name": "key-bindings",
+  "description": "Key bindings for Node.",
+  "version": "1.0.0",
+  "main": "./js/src/index",
+  "dependencies": {
+    "NamedFunction": "aleclarson/NamedFunction#2.0.0",
+    "define": "aleclarson/define#1.0.0",
+    "keypress": "^0.2.1",
+    "type-utils": "aleclarson/type-utils#1.0.0"
+  }
+}
