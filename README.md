@@ -1,23 +1,16 @@
 
-# key-bindings v1.0.0 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+# key-bindings 1.1.0 ![stable](https://img.shields.io/badge/stability-stable-4EBA0F.svg?style=flat)
 
-```sh
-npm install aleclarson/key-bindings#1.0.0
-```
-
-&nbsp;
-
-## usage
-
-```CoffeeScript
+```coffee
 KeyBindings = require "key-bindings"
 
 keys = KeyBindings
 
   "f+ctrl": ->
-    # Do something crazy.
+    # Supports 'ctrl', 'shift', and 'meta' modifier keys.
+    # You can even use multiple modifiers at once! (eg: "f+ctrl+shift")
 
-# Add more key bindings.
+# Add more bindings later on.
 keys.add
 
   always: (info) ->
@@ -37,3 +30,7 @@ keys.isEnabled = no
 ```
 
 **NOTE:** Adding a key binding that is already added results in overwriting the previous binding.
+
+---
+
+**TODO:** Add more documentation?
