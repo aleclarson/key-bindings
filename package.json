@@ -1,0 +1,17 @@
+{
+  "name": "key-bindings",
+  "version": "1.0.0",
+  "main": "js/KeyBindings",
+  "plugins": [
+    "lotus-coffee"
+  ],
+  "scripts": {
+    "build": "coffee -v 1.11.x -b -o js src",
+    "postinstall": "npm run build"
+  },
+  "dependencies": {
+    "Type": "aleclarson/Type#1.1.0",
+    "assertType": "aleclarson/assertType#2.0.0",
+    "keypress": "^0.2.1"
+  }
+}
